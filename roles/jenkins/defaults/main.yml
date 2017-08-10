@@ -132,3 +132,4 @@ jenkins_plugins:
   - Email Extension Template Plugin
   - Build Authorization Token Root Plugin
   - Slack Notification Plugin
+  - GitHub plugin
