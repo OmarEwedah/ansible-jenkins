@@ -1,15 +1,6 @@
 ---
-# file: oracle-java/defaults/main.yml
-#
-# defaults file
-#
 
-oracle_java_dir_source: '/usr/local/src'
-
-oracle_java_set_as_default: yes
-
-oracle_java_version: 8
-oracle_java_version_string: "1.{{ oracle_java_version }}.0_{{ oracle_java_version_update }}"
-oracle_java_ansible_arch_mappings:
-  x86_64: x64
-  i386: i586
+java_download_url: http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz
+java_archive_name: jdk-8u131-linux-x64.tar.gz
+java_root_dir: /usr/share/java-1.8.0
+java_jdk_dir: "{{ java_root_dir }}/jdk1.8.0_131"
