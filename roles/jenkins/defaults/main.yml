@@ -128,3 +128,7 @@ jenkins_plugins:
   - workflow-step-api
   - workflow-support
   - ws-cleanup
+  - CloudBees Docker Build and Publish plugin
+  - Email Extension Template Plugin
+  - Build Authorization Token Root Plugin
+  - Slack Notification Plugin
