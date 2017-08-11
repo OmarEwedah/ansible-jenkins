@@ -7,7 +7,7 @@ jenkins_package_state: present
 jenkins_install_dir: /var/lib/jenkins
 jenkins_connection_delay: 5
 jenkins_connection_retries: 60
-jenkins_home: /var/lib/jenkins
+jenkins_home: /home/jenkins
 jenkins_hostname: localhost
 jenkins_http_port: 8080
 jenkins_jar_location: /opt/jenkins-cli.jar
@@ -32,42 +32,20 @@ jenkins_init_changes:
     value: "{{ jenkins_java_options }}"
 
 jenkins_plugins:
-  - bitbucket
-  - bitbucket-pullrequest-builder
-  - build-pipeline-plugin
   - copyartifact 
   - credentials 
   - delivery-pipeline-plugin 
   - environment-script 
   - git
-  - ghprb
-  - greenballs 
-  - hipchat 
   - junit 
-  - matrix-auth 
-  - matrix-project 
   - parameterized-trigger 
   - rebuild 
   - ssh
-  - s3 
-  - throttle-concurrents 
-  - ace-editor
-  - ant
-  - antisamy-markup-formatter
   - authentication-tokens
-  - bouncycastle-api
-  - branch-api
-  - build-timeout
-  - cloudbees-folder
   - credentials
-  - credentials-binding
-  - display-url-api
   - docker-commons
   - docker-workflow
-  - durable-task
   - email-ext
-  - external-monitor-job
-  - favorite
   - git
   - git-client
   - git-server
@@ -76,20 +54,10 @@ jenkins_plugins:
   - github-branch-source
   - github-organization-folder
   - gradle
-  - handlebars
-  - icon-shim
-  - jackson2-api
-  - javadoc
   - jquery-detached
   - junit
   - mailer
-  - mapdb-api
-  - matrix-auth	
-  - matrix-project
   - maven-plugin
-  - metrics
-  - momentjs
-  - pam-auth
   - pipeline-build-step
   - pipeline-github-lib
   - pipeline-graph-analysis
@@ -102,19 +70,12 @@ jenkins_plugins:
   - pipeline-stage-step
   - pipeline-stage-tags-metadata
   - pipeline-stage-view
-  - plain-credentials
-  - pubsub-light
-  - resource-disposer
   - scm-api
   - script-security
   - sse-gateway
   - ssh-credentials
   - ssh-slaves	
-  - structs
   - subversion
-  - timestamper
-  - token-macro	
-  - variant
   - windows-slaves
   - workflow-aggregator
   - workflow-api

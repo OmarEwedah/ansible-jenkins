@@ -4,4 +4,3 @@
   roles:
      - oracle-java
      - jenkins
-     - jenkins-slave
