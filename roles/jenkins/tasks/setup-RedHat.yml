@@ -43,6 +43,3 @@
     name: jenkins
     state: "{{ jenkins_package_state }}"
 
-# Create  SSH key for user jenkins
-- name: Create ssh key for jenkins user
-  user: name=jenkins generate_ssh_key=yes  shell=/bin/bash
