@@ -35,7 +35,6 @@ jenkins_plugins:
   - copyartifact 
   - credentials 
   - delivery-pipeline-plugin
-  - environment-script 
   - git
   - junit 
   - parameterized-trigger 
